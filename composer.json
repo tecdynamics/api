@@ -1,0 +1,45 @@
+{
+    "name": "tecdynamics/api",
+    "description": "API package for Tec CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "Tec",
+        "Tec cms",
+        "Tec platform",
+        "Tec api"
+    ],
+    "homepage": "https://tecdynamics.co.uk",
+    "authors": [
+        {
+            "name": "Tec-Dynamics",
+            "email": "support@tecdynamics.co.um"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tec\\Api\\": "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "laravel/pint": "^1.4.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tec\\Api\\Providers\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "ApiHelper": "Tec\\Api\\Facades\\ApiHelper"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
